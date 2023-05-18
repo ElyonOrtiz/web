@@ -10,7 +10,7 @@ export default function Home() {
         {/* Blur */}
         <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-700 opacity-50 blur-full" />
         {/* Strips */}
-        <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
+        <div className="absolute bottom-0 right-2  top-0 w-2 bg-stripes" />
         {/* SingIn User */}
         <a
           href=""
@@ -25,8 +25,33 @@ export default function Home() {
           </p>
         </a>
         {/* Hero */}
-        <div>
+        <div className="space-y-5">
           <Image src={nlwLogo} alt="nlwLogo" />
+          <div>
+            <h1 className="space-y-5">Sua cápsula do tempo</h1>
+            <p className="text-lg leading-relaxed">
+              Colecione momentos marcantes da sua jornada e compartilhe (se
+              quiser) com o mundo!
+            </p>
+          </div>
+          <a
+            className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-700"
+            href=""
+          >
+            CADASTRAR LEMBRANÇA
+          </a>
+        </div>
+        {/* Copyright */}
+        <div className="text-sm leading-relaxed text-gray-200">
+          Feito com 💜 no NLW da{' '}
+          <a
+            href="https://rocketseat.com.br"
+            className="underline hover:text-gray-100"
+            target="-blank"
+            rel="noreferrer"
+          >
+            Rocketseat
+          </a>
         </div>
       </div>
 
