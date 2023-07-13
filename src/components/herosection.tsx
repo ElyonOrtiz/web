@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import nlwLogo from '../assets/nlw-spacingtime-logo.svg'
 import Image from 'next/image'
 
@@ -12,12 +13,12 @@ export const HeroSection = () => {
           com o mundo!
         </p>
       </div>
-      <a
+      <Link
         className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-700"
-        href=""
+        href="/memories/news"
       >
         CADASTRAR LEMBRANÇA
-      </a>
+      </Link>
     </div>
   )
 }
